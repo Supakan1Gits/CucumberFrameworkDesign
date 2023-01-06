@@ -1,3 +1,4 @@
+@Regression
 Feature: Crater create Items
   Manage items , add , update, delete items
   
