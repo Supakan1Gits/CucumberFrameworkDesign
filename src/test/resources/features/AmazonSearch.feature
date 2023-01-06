@@ -1,21 +1,17 @@
-
-@tag
 Feature: Amazon search
-  I want to use this template for my feature file
 
-  @tamazonSearchTest
-  Scenario Outline: Search Items on Amazon
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  
-
+  @amazonSearchTests
+  Scenario Outline: Search items on amazon
+    Given I am on the amazon homepage
+    When I enter the search term "<items>"
+    And I click on search button
+    Then I should see the search item "<items>" on search result page
+    And the page title should contain the searched item "<items>"
+    
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | items             |
+      | coffee mug        |
+      | pretty coffee mug |
+      | cool coffee mug   |
+      | cute coffee mug   |
+      | golden coffee mug |

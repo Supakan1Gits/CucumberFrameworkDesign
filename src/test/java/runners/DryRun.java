@@ -10,10 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 	    features="./src/test/resources/features",
 		glue="step_definitions",
 		dryRun=true,
+		tags=""
 		// when it's true, cucumber only run the scenario steps that have not been implemented
-	    tags="",
-        publish=true
-				)
+         )
 
 public class DryRun {
 
