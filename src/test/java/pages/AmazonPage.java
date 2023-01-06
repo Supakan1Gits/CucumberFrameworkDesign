@@ -14,5 +14,11 @@ public class AmazonPage {
 	
 	@FindBy (id = "twotabsearchtextbox")
 	public WebElement amazonSearchBox;
+	
+	@FindBy (id = "nav-search-submit-button")
+	public WebElement searchBtn;
+	
+	@FindBy (xpath = "//span[@class='a-color-state a-text-bold']")
+	public WebElement searchedItemText;
 
 }
