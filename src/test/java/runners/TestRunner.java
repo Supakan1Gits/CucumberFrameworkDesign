@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue="step_definitions",
 		// when it's true, cucumber only run the scenario steps that have not been implemented
 	    tags="@amazonSearchTests",
-        publish=true
+	    publish=true
 				)
 public class TestRunner {
 	

@@ -1,4 +1,3 @@
-@Regression
 Feature: Amazon search
 
   @amazonSearchTests
