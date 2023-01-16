@@ -29,6 +29,16 @@ Feature: Crater User Management
      Then error messages appear
      And user is not logged in
      And user quits the browser
+   
+   
+   
+   @invalidTestSets
+   Scenario Outline: Invalid login attempts
+     When user enters invalid useremail "<useremail>" and password "<password>"
+     And clicks on the login button
+     Then error messages appear
+     And user is not logged in
+     And user quits the browser
  
     Examples:
     | useremail                   | password        |
