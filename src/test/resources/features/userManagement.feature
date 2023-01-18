@@ -7,9 +7,9 @@ Feature: Crater User Management
    Background: 
      Given user is on the login page
    
-   @validLoginTest @loginTests @smokeTests
+ @validLoginTest @loginTests @smokeTests
    Scenario: User is able to login successfully
-     When  user enter valid "mochana24@gmail.com" and "Password1234"
+     When  user enter valid "mochana24@gmail.com" and "Test1234"
      And   clicks on the login button
      Then  user should be on dashboard page
      And   user quits the browser
